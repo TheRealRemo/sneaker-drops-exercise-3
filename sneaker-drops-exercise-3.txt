@@ -1,0 +1,66 @@
+Exercise 3 - Model and Fix JSON
+
+Step 1:
+
+
+"genre": {
+"id": 5,
+"name": "Rougelike"
+} 
+
+Step 2:
+
+{
+"id": 12,
+"title": "Hades",
+"releaseYear": 2020,
+"rating": 9.3,
+"genre": {
+"id": 5,
+"name": "Roguelike"
+   } 
+}
+
+Step 3:
+
+[
+
+{
+"id": 12,
+"title": "Hades",
+"releaseYear": 2020,
+"rating": 9.3,
+"genre": {
+"id": 5,
+"name": "Roguelike"
+   } 
+}
+
+{
+"id": 3,
+"title": "Celeste",
+"releaseYear": 2018,
+"rating": 9.1,
+"genre": {
+"id": 2,
+"name": "Indie"
+  }
+}
+
+]
+
+
+"[]" denotes that it is more than one object in a JSON array.
+
+Step 4:
+
+{ 'title': 'Celeste' } is wrong because the key and the title String is wrapped in single quotes rather than double quotes. { "title": "Celeste" } is correct.
+
+{ "id": 3, "rating": 9.1, } is incorrect because rating doesn't come right after the id, title does.
+{ "id": 3, "title": "Celeste", } would be correct
+
+{ title: "Hades", "releaseYear": 2020 }  is wrong because the key "title" isn't wrapped in double quotes
+{ "title": "Hades", "releaseYear": 2020 } is correct
+
+{ "rating": "9.3" } is wrong because the double is not a string, therefore it needs no quotes. 
+{ "rating": 9.3 } would be correct
