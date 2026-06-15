@@ -56,8 +56,8 @@ Step 4:
 
 { 'title': 'Celeste' } is wrong because the key and the title String is wrapped in single quotes rather than double quotes. { "title": "Celeste" } is correct.
 
-{ "id": 3, "rating": 9.1, } is incorrect because rating doesn't come right after the id, title does.
-{ "id": 3, "title": "Celeste", } would be correct
+{ "id": 3, "rating": 9.1, } is incorrect because it shouldn't have a trailing comma because "rating" is the last attribute being queried.
+{ "id": 3, "rating": 9.1 } would be correct
 
 { title: "Hades", "releaseYear": 2020 }  is wrong because the key "title" isn't wrapped in double quotes
 { "title": "Hades", "releaseYear": 2020 } is correct
